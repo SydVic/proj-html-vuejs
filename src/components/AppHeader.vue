@@ -84,7 +84,7 @@
         <div class="jumbotron-text">
           <div class="row">
             <div class="col-lg-5">
-              <h3>logistics services</h3>
+              <h3 class="subtitle">logistics services</h3>
               <h2>cargo transport</h2>
               <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</p>
               <div class="jumbotron-cta">
@@ -231,12 +231,6 @@ export default {
   .jumbotron-text {
     padding: 10rem 0 15rem 0;
     position: relative;
-
-    h3 {
-      color: $brand-primary;
-      text-transform: uppercase;
-      font-size: 1rem;
-    }
 
     h2 {
       color: $white;
