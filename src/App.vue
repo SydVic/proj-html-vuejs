@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppHeader :companyObject="companyInfo" :navItemsArray="navItems"/>
     <AppMain />
     <AppFooter />
   </div>
@@ -27,7 +27,21 @@ export default {
         openingDay: 'Mon',
         closingDay: 'Sat',
         openingHour: '9:00',
-        closingHour: '18:00'
+        closingHour: '18:00',
+        socialContacts: [ 
+          {
+            prefix: 'fab',
+            social: 'fa-facebook'
+          },
+          {
+            prefix: 'fab',
+            social: 'fa-twitter'
+          },
+          {
+            prefix: 'fab',
+            social: 'fa-linkedin-in'
+          },
+        ]
       },
       navItems: [
         'home',
@@ -35,7 +49,7 @@ export default {
         'services',
         'process',
         'testimonials',
-        '<i class="far fa-user"></i>',
+        // '<i class="far fa-user"></i>',
         'get in touch'
       ]
     }
@@ -45,5 +59,7 @@ export default {
 
 <style lang="scss">
 @import "./style/framework-12cols.scss";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 
 </style>

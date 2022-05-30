@@ -1,32 +1,95 @@
 <template>
-  <section class="header">
-    <div class="header__top"></div>
-    <div class="header__bottom"></div>
+  <!-- HAEDER WIDTH 100% -->
+  <section class="header container-fluid">
+    <!-- HEADER TOP WIDTH 100% -->
+    <div class="header__top">
+      <!-- COMPANY INFO WRAPPER WIDTH 60% -->
+      <div class="company-info-wrapper container-small">
+        <!-- OPENING DAYS AND HORURS -->
+        <div class="company-hours">
+          <i class="fas fa-clock"></i>
+          <span>Open Hours: {{ companyObject.openingDay }} - {{ companyObject.closingDay }} - {{ companyObject.openingHour }} - {{ companyObject.closingHour }}</span>
+        </div>
+        <!-- /OPENING DAYS AND HORURS -->
+
+        <!-- CONTACTS -->
+        <div class="company-contacts">
+          <!-- PHONE ADN MAIL -->
+          <span class="company-phone-number">
+            <i class="fas fa-phone-alt"></i>
+            {{ companyObject.phone }}
+          </span>
+          <span class="company-phone-number">
+            <i class="fas fa-envelope"></i>
+            {{ companyObject.eMail }}
+          </span>
+          <!-- /PHONE ADN MAIL -->  
+
+          <!-- SOCIAL CONTACTS -->
+          <ul class=social-list>
+            <li v-for="(item, index) in companyObject.socialContacts" :key="index">
+              <a href="">
+                <i :class="`${item.prefix} ${item.social}`"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /CONTACTS -->
+      </div>
+      <!-- /COMPANY INFO WRAPPER WIDTH 60% -->
+    </div>
+    <!-- /HEADER TOP WIDTH 100% -->
+
+    <!-- HEADER BOTTOM WIDTH 100% -->
+    <div class="header__bottom">
+
+    </div>
+    <!-- /HEADER BOTTOM WIDTH 100% -->
   </section>
+  <!-- /HAEDER WIDTH 100% -->
 </template>
 
 <script>
 export default {
   name: "AppHeader",
+  props: {
+    companyObject: Object,
+    navItemsArray: Array,
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-.header {
-  width: 100%;
+.header__top {
+  color: #bcbdbd;
+  background-color: $header-top-bg;
+  height: $header-top-height;
+  display: flex;
+  align-items: center;
 
-  &__top {
-    background-color: $header-top-bg;
-    height: $header-top-height;
-  }
+  .company-info-wrapper {
+  display: flex;
+  justify-content: space-between;
 
-  &__bottom {
-    background-image: $header-jumbotron-img;
+    .company-contacts {
+      display: flex;
 
-    /*test*/
-    height: 800px;
+      ul.social-list {
+        list-style: none;
+        display: flex;
+      }
+    }
   }
 }
+  
+.header__bottom {
+  background-image: $header-jumbotron-img;
+  
+  /*test*/
+  height: 800px;
+}
+
+
 </style>
