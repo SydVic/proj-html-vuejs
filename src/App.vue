@@ -17,10 +17,33 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
+  },
+  data: function() {
+    return {
+      companyInfo: {
+        name: 'nexgen',
+        phone: '+1 (305)1234-5678',
+        eMail: 'hello@example.com',
+        openingDay: 'Mon',
+        closingDay: 'Sat',
+        openingHour: '9:00',
+        closingHour: '18:00'
+      },
+      navItems: [
+        'home',
+        'about',
+        'services',
+        'process',
+        'testimonials',
+        '<i class="far fa-user"></i>',
+        'get in touch'
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
+@import "./style/framework-12cols.scss";
 
 </style>
