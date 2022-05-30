@@ -79,6 +79,26 @@
           <!-- /NAV ITEMS -->
         </div>
         <!-- /NAV WRAPPER -->
+
+        <!-- JUMBOTRON TEXT -->
+        <div class="jumbotron-text">
+          <div class="row">
+            <div class="col-lg-5">
+              <h3>logistics services</h3>
+              <h2>cargo transport</h2>
+              <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</p>
+              <div class="jumbotron-cta">
+                <div>
+                  <a class="btn-primary">get in touch</a>
+                </div>
+                <div>
+                  <a class="btn-secondary">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /JUMBOTRON TEXT -->
       </div>
       <!-- /JUMBOTRON WRAPPER WIDTH 60% -->
     </div>
@@ -151,11 +171,25 @@ export default {
   
 .header__bottom {
   background-image: $header-jumbotron-img;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+  }
 
   .nav-wrapper {
-    padding: 2.5rem 0 5rem 0;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 100;
+    position: relative;
 
     .company-name {
       text-transform: uppercase;
@@ -193,7 +227,39 @@ export default {
       }
     }
   }
+
+  .jumbotron-text {
+    padding: 10rem 0 15rem 0;
+    position: relative;
+
+    h3 {
+      color: $brand-primary;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 5rem;
+    }
+
+    p {
+      color: $silver-sand;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin: 1.5rem 0 4rem 0;
+    }
+
+    .jumbotron-cta {
+      display: flex;
+
+      .btn-primary {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }
-
-
 </style>
