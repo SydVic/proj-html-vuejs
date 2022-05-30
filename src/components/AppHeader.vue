@@ -7,7 +7,9 @@
       <div class="company-info-wrapper container-small">
         <!-- OPENING DAYS AND HORURS -->
         <div class="company-hours">
-          <i class="fas fa-clock"></i>
+          <span class="clock-icon">
+            <i class="fas fa-clock"></i>
+          </span>
           <span>Open Hours: {{ companyObject.openingDay }} - {{ companyObject.closingDay }} - {{ companyObject.openingHour }} - {{ companyObject.closingHour }}</span>
         </div>
         <!-- /OPENING DAYS AND HORURS -->
@@ -16,11 +18,15 @@
         <div class="company-contacts">
           <!-- PHONE ADN MAIL -->
           <span class="company-phone-number">
-            <i class="fas fa-phone-alt"></i>
+            <span class="phone-icon">
+              <i class="fas fa-phone"></i>
+            </span>
             {{ companyObject.phone }}
           </span>
-          <span class="company-phone-number">
-            <i class="fas fa-envelope"></i>
+          <span class="company-mail">
+            <span class="envelope-icon">
+              <i class="fas fa-envelope"></i>
+            </span>
             {{ companyObject.eMail }}
           </span>
           <!-- /PHONE ADN MAIL -->  
@@ -33,6 +39,7 @@
               </a>
             </li>
           </ul>
+          <!-- /SOCIAL CONTACTS -->
         </div>
         <!-- /CONTACTS -->
       </div>
@@ -63,7 +70,7 @@ export default {
 @import "../style/variables.scss";
 
 .header__top {
-  color: #bcbdbd;
+  color: $text-grey;
   background-color: $header-top-bg;
   height: $header-top-height;
   display: flex;
@@ -73,12 +80,38 @@ export default {
   display: flex;
   justify-content: space-between;
 
+    .clock-icon {
+      margin-right: .5rem;
+    }
+
     .company-contacts {
       display: flex;
 
+      .company-phone-number {
+        margin-right: 2rem;
+
+        .phone-icon {
+          margin-right: .3rem;
+        }
+      }
+
+      .company-mail {
+
+        .envelope-icon {
+          margin-right: .3rem;
+        }
+      }
+
       ul.social-list {
-        list-style: none;
         display: flex;
+
+        li {
+          margin-left: 2rem;
+
+          a {
+            color: inherit;
+          }
+        }
       }
     }
   }

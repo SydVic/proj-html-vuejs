@@ -22,7 +22,7 @@ export default {
     return {
       companyInfo: {
         name: 'nexgen',
-        phone: '+1 (305)1234-5678',
+        phone: '+1 (305) 1234-5678',
         eMail: 'hello@example.com',
         openingDay: 'Mon',
         closingDay: 'Sat',
@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss">
 @import "./style/framework-12cols.scss";
+@import "./style/common.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 
