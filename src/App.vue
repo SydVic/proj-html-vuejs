@@ -10,6 +10,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+import "@fontsource/aileron";
 
 export default {
   name: 'App',
@@ -21,7 +22,8 @@ export default {
   data: function() {
     return {
       companyInfo: {
-        name: 'nexgen',
+        prename: 'nex',
+        name: 'gen',
         phone: '+1 (305) 1234-5678',
         eMail: 'hello@example.com',
         openingDay: 'Mon',
@@ -49,8 +51,6 @@ export default {
         'services',
         'process',
         'testimonials',
-        // '<i class="far fa-user"></i>',
-        'get in touch'
       ]
     }
   }

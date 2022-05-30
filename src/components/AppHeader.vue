@@ -49,7 +49,38 @@
 
     <!-- HEADER BOTTOM WIDTH 100% -->
     <div class="header__bottom">
+      <!-- JUMBOTRON WRAPPER WIDTH 60% -->
+      <div class="container-small">
+        <!-- NAV WRAPPER -->
+        <div class="nav-wrapper">
+          <!-- COMPANY NAME -->
+          <div class="company-name">
+            <span class="prename">{{companyObject.prename}}</span>
+            <span class="name">{{companyObject.name}}</span>
+          </div>
+          <!-- /COMPANY NAME -->
 
+          <!-- NAV ITEMS -->
+          <div class="nav-items">
+            <ul>
+              <li v-for="(item, index) in navItemsArray" :key="index">
+                <a href="">{{ item }}</a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="far fa-user"></i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-primary" href="">get in touch</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /NAV ITEMS -->
+        </div>
+        <!-- /NAV WRAPPER -->
+      </div>
+      <!-- /JUMBOTRON WRAPPER WIDTH 60% -->
     </div>
     <!-- /HEADER BOTTOM WIDTH 100% -->
   </section>
@@ -70,7 +101,8 @@ export default {
 @import "../style/variables.scss";
 
 .header__top {
-  color: $text-grey;
+  color: $silver-sand;
+  font-weight: 100;
   background-color: $header-top-bg;
   height: $header-top-height;
   display: flex;
@@ -119,9 +151,48 @@ export default {
   
 .header__bottom {
   background-image: $header-jumbotron-img;
+
+  .nav-wrapper {
+    padding: 2.5rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .company-name {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 3px;
   
-  /*test*/
-  height: 800px;
+      .prename {
+        color: $brand-primary;
+        background-color: rgba(22, 146, 142, .3);
+        padding: .5rem .2rem .5rem 1.5rem;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .name {
+        color: $silver-sand;
+        padding-left: .2rem;
+      }
+    }
+
+    .nav-items {
+
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 1.5rem;
+          text-transform: uppercase;
+          color: $white;
+
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
 }
 
 

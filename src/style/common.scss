@@ -1,4 +1,23 @@
+@import "variables.scss";
+
+body {
+  font-family: "Aileron", sans-serif;
+}
+
 /* RESET */
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COMMON */
+.btn-primary {
+  color: $white;
+  background-color: $brand-primary;
+  text-transform: uppercase;
+  padding: .8rem 1.5rem;
+  border-radius: 8px;
 }
