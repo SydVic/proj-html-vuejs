@@ -1,16 +1,14 @@
 <template>
   <!-- SECTION WHO WE ARE -->
   <section class="who-we-are">
-    <div class="container-small">
+    <div class="container-general">
       <div class="row">
         <div class="col-lg-8">
           <div class="text-section">
             <h3 class="title-small">who we are</h3>
             <h2 class="title">
               <span class="title-highlighted txt-brand">
-                <i class="far fa-gem"></i> 
-                Excellence 
-              </span>
+                <i class="far fa-gem"></i> Excellence</span>
               <span class="title-normal">in Transport</span>
             </h2>
             <div class="text-wrapper">
@@ -101,13 +99,18 @@ section.who-we-are {
     .text-wrapper {
       color: $shark;
   
-      .italic {
-        border-left: 5px solid $brand-primary-shadow;
-        padding: 1rem 5rem 1rem 1.5rem;
-        font-style: italic;
+      .paragraph {
+        color: $mid-gray;
+
+        &.italic {
+          border-left: 5px solid $brand-primary-shadow;
+          padding: 1rem 5rem 1rem 1.5rem;
+          font-style: italic;
+        }
       }
   
       ul {
+      color: $mid-gray;
       list-style: disc;
       margin-left: 1rem;
   

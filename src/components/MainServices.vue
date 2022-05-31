@@ -1,7 +1,7 @@
 <template>
   <section class="services">
     <!-- CONTAINER WIDTH 60% -->
-    <div class="container-small">
+    <div class="container-general">
       <!-- SERVICES TITLE AND TEXT -->
       <div class="row">
         <div class="col-lg-8">
@@ -97,7 +97,6 @@ section.services {
   }
 
   .paragraph {
-    color: $silver-sand;
     margin-bottom: 0;
   }
 

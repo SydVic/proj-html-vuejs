@@ -18,6 +18,14 @@ img {
 }
 
 /* COMMON */
+.container-general {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 40%;
+}
 
 .ml-auto {
   margin-left: auto;
@@ -72,10 +80,11 @@ img {
 .title-highlighted {
   background-color: $brand-primary-shadow;
   border-radius: 5px;
-  padding: 0 .6rem;
+  padding: 0 .7rem;
 }
 
 .paragraph {
   margin: 2rem 0;
   line-height: 1.4rem;
+  color: $silver-sand;
 }

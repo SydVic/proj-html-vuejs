@@ -50,7 +50,7 @@
     <!-- HEADER BOTTOM WIDTH 100% -->
     <div class="header__bottom">
       <!-- JUMBOTRON WRAPPER WIDTH 60% -->
-      <div class="container-small">
+      <div class="container-general">
         <!-- NAV WRAPPER -->
         <div class="nav-wrapper">
           <!-- COMPANY NAME -->
