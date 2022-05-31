@@ -95,6 +95,7 @@ section.feedback {
     padding: 2.5rem 2rem;
     border-radius: 10px;
     margin-top: 3rem;
+    position: relative;
 
     .paragraph {
       margin: .5rem 0 .5rem 0;
@@ -115,10 +116,12 @@ section.feedback {
     }
 
     .icon-wrapper {
+      font-size: 1.5rem;
       color: #47474c;
-      display: flex;
-      justify-content: space-between;
       display: inline-block;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
     }
   }
 }
