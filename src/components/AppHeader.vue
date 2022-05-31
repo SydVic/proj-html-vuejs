@@ -4,7 +4,7 @@
     <!-- HEADER TOP WIDTH 100% -->
     <div class="header__top">
       <!-- COMPANY INFO WRAPPER WIDTH 60% -->
-      <div class="company-info-wrapper container-small">
+      <div class="company-info-wrapper container-general">
         <!-- OPENING DAYS AND HORURS -->
         <div class="company-hours">
           <span class="clock-icon">

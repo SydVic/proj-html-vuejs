@@ -3,6 +3,8 @@
     <MainWhoWeAre />
     <MainServices />
     <MainLogistics />
+    <MainResults />
+    <MainFeedback />
   </main>
 </template>
 
@@ -10,6 +12,8 @@
 import MainWhoWeAre from "./MainWhoWeAre.vue";
 import MainServices from "./MainServices.vue";
 import MainLogistics from "./MainLogistics.vue";
+import MainResults from "./MainResults.vue";
+import MainFeedback from "./MainFeedback.vue";
 
 export default {
   name: "AppMain",
@@ -17,6 +21,8 @@ export default {
     MainWhoWeAre,
     MainServices,
     MainLogistics,
+    MainResults,
+    MainFeedback,
   }
 }
 </script>
