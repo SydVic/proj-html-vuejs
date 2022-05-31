@@ -19,7 +19,7 @@
           <!-- PHONE ADN MAIL -->
           <span class="company-phone-number">
             <span class="phone-icon">
-              <i class="fas fa-phone"></i>
+              <i class="fas fa-phone-alt"></i>
             </span>
             {{ companyObject.phone }}
           </span>
@@ -88,10 +88,10 @@
               <h2>cargo transport</h2>
               <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</p>
               <div class="jumbotron-cta">
-                <div>
+                <div class="btn">
                   <a class="btn-primary">get in touch</a>
                 </div>
-                <div>
+                <div class="btn">
                   <a class="btn-secondary">read more</a>
                 </div>
               </div>
@@ -214,6 +214,7 @@ export default {
 
       ul {
         display: flex;
+        align-items: center;
 
         li {
           margin-left: 1.5rem;
@@ -244,7 +245,7 @@ export default {
       color: $silver-sand;
       font-size: 1.2rem;
       line-height: 1.8rem;
-      margin: 1.5rem 0 4rem 0;
+      margin: 1.5rem 0 3rem 0;
     }
 
     .jumbotron-cta {

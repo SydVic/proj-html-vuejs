@@ -18,6 +18,23 @@ img {
 }
 
 /* COMMON */
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mc-auto {
+  margin: 0 auto;
+}
+
+.txt-white {
+  color: $white;
+}
+
+.txt-brand {
+  color: $brand-primary;
+}
+
 .btn-primary {
   color: $white;
   background-color: $brand-primary;
@@ -25,6 +42,8 @@ img {
   font-weight: bold;
   padding: .8rem 1.5rem;
   border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -34,6 +53,8 @@ img {
   font-weight: bold;
   padding: .8rem 1.5rem;
   border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .title-small {
@@ -42,6 +63,19 @@ img {
   font-size: 1rem;
 }
 
+.title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-top: 1.5rem;
+}
+
+.title-highlighted {
+  background-color: $brand-primary-shadow;
+  border-radius: 5px;
+  padding: 0 .6rem;
+}
+
 .paragraph {
   margin: 2rem 0;
+  line-height: 1.4rem;
 }

@@ -7,7 +7,7 @@
           <div class="text-section">
             <h3 class="title-small">who we are</h3>
             <h2 class="title">
-              <span class="title-highlighted">
+              <span class="title-highlighted txt-brand">
                 <i class="far fa-gem"></i> 
                 Excellence 
               </span>
@@ -89,28 +89,13 @@ section.who-we-are {
 
   .text-section {
     padding-right: 2rem;
-
-    .title-small {
-      margin-bottom: 1.5rem;
+  
+    i {
+      padding-left: 1rem;
     }
-  
-    .title {
-      font-size: 2.8rem;
-      font-weight: 900;
-  
-      .title-highlighted {
-        color: $brand-primary;
-        background-color: $brand-primary-shadow;
-        border-radius: 5px;
-  
-        i {
-          padding-left: 1rem;
-        }
-      }
-  
-      .title-normal {
-        padding-left: .5rem;
-      }
+    
+    .title-normal {
+      padding-left: .5rem;
     }
   
     .text-wrapper {
