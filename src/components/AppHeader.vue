@@ -84,7 +84,7 @@
         <div class="jumbotron-text">
           <div class="row">
             <div class="col-lg-5">
-              <h3 class="subtitle">logistics services</h3>
+              <h3 class="title-small">logistics services</h3>
               <h2>cargo transport</h2>
               <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</p>
               <div class="jumbotron-cta">
@@ -199,7 +199,7 @@ export default {
   
       .prename {
         color: $brand-primary;
-        background-color: rgba(22, 146, 142, .3);
+        background-color: $brand-primary-shadow;
         padding: .5rem .2rem .5rem 1.5rem;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
