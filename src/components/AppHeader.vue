@@ -187,7 +187,7 @@ export default {
     padding-top: 2.5rem;
     display: flex;
     justify-content: space-between;
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
     font-weight: 100;
     position: relative;
 
@@ -201,6 +201,10 @@ export default {
           margin-left: 1.5rem;
           text-transform: uppercase;
           color: $white;
+
+          &:hover {
+            color: $silver-sand;
+          }
 
           a {
             color: inherit;

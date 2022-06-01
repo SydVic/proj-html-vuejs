@@ -51,7 +51,7 @@ export default {
         socialContacts: [ 
           {
             prefix: 'fab',
-            social: 'fa-facebook'
+            social: 'fa-facebook-f'
           },
           {
             prefix: 'fab',

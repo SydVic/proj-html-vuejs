@@ -163,6 +163,10 @@ section.contact-us {
 
   .btn-secondary {
     color: $brand-primary;
+
+    &:hover {
+      color: $silver-sand;
+    }
   }
 }
 </style>

@@ -111,6 +111,10 @@ img {
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
+
+  &:hover {
+    color: $silver-sand;
+  }
 }
 
 .btn-secondary {
@@ -122,4 +126,8 @@ img {
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
+
+  &:hover {
+    color: $silver-sand;
+  }
 }
