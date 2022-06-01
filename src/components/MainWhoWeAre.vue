@@ -83,7 +83,7 @@ export default {
 @import "../style/variables.scss";
 
 section.who-we-are {
-  padding: 8rem 0;
+  padding: $sections-padding;
 
   .text-section {
     padding-right: 2rem;

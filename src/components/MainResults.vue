@@ -40,7 +40,7 @@ export default {
 section.results {
   background-image: $results-jumbotron-img;
   background-position: center;
-  padding: 8rem 0;
+  padding: $sections-padding;
   position: relative;
 
     &::before {

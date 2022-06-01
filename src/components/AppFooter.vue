@@ -51,22 +51,18 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="content-wrapper">
-
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="content-wrapper">
-
-            </div>
-          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container-general">
-
+        <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+        <p>&copy; 2020 NEXGEN is Proudly Powered by <span class="txt-brand">Codings</span></p>
+      </div>
+      <div class="back-to-top">
+        <a href="initial">
+          <i class="fas fa-arrow-up"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -87,7 +83,7 @@ export default {
 
 .footer-top {
   background-color: $sections-bg;
-  padding: 8rem 0;
+  padding: $sections-padding;
 
   ul.company-contacts {
     color: $silver-sand;
@@ -111,6 +107,7 @@ export default {
     .footer-card  {
       background-color: $card-bg;
       padding: 2rem 2.5rem 3rem 2.5rem;
+      border-radius: 8px;
   
       h2 {
         margin-bottom: 1.5rem;
@@ -129,7 +126,7 @@ export default {
           }
 
           &:hover {
-            color: white;
+            color: $white;
           }
         }
       }
@@ -138,9 +135,36 @@ export default {
 }
 
 .footer-bottom {
+  height: $footer-bottom-heigt;
   background-color: $black;
+  color: $silver-sand;
+  font-size: .9rem;
+  position: relative;
 
-  /*test */
-  height: 100px;
+  .container-general {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .back-to-top {
+    color: $brand-primary-shadow;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+
+    a {
+      color: inherit;
+    }
+  }
 }
 </style>

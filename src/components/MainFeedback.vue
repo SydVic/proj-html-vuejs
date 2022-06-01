@@ -74,7 +74,7 @@ export default {
 @import "../style/variables.scss";
 
 section.feedback {
-  padding: 8rem 0;
+  padding: $sections-padding;
   background-color: $sections-bg;
 
   .container-small {

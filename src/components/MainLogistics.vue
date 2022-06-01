@@ -64,7 +64,7 @@ export default {
 
 section.logistical {
   background-color: #eef4ed;
-  padding: 8rem 0;
+  padding: $sections-padding;
 
   .container-small {
     text-align: center;

@@ -2,7 +2,7 @@
   <!-- HAEDER WIDTH 100% -->
   <section class="header container-fluid">
     <!-- HEADER TOP WIDTH 100% -->
-    <div class="header__top">
+    <div class="header__top" id="initial">
       <!-- COMPANY INFO WRAPPER WIDTH 60% -->
       <div class="company-info-wrapper container-general">
         <!-- OPENING DAYS AND HORURS -->
