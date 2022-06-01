@@ -29,7 +29,40 @@
           </div>
         </div>
         <div class="col-lg-4 col-lg-offset-1">
-          <div class="contacts-wrapper">col 4</div>
+          <div class="contacts-wrapper">
+            <h2>Example Inc.</h2>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="paragraph">Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+            <ul class="company-contacts">
+              <li>
+                <span class="icon-wrapper">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="text-wrapper">
+                  {{ companyObject.phone }}
+                </span>
+              </li>
+              <li>
+                <span class="icon-wrapper">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="text-wrapper">
+                  {{ companyObject.eMail }}
+                </span>
+              </li>
+              <li>
+                <span class="icon-wrapper">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="text-wrapper">
+                  {{ companyObject.location }}
+                </span>
+              </li>
+            </ul>
+            <div class="btn">
+              <a class="btn-secondary" href="">view map</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,6 +72,9 @@
 <script>
 export default {
   name: "MainContactUs",
+  props: {
+    companyObject: Object,
+  }
 }
 </script>
 
@@ -97,8 +133,36 @@ section.contact-us {
     }
   }
 
-  .btn {
-    margin-top: .5rem;
+  ul.company-contacts {
+
+    li {
+      margin-bottom: 1.5rem;
+
+      span {
+        display: inline-block;
+        color: $brand-primary;
+        font-size: 1.2rem;
+      }
+
+      span.icon-wrapper {
+        background-color: $brand-primary-shadow;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 45px;
+        border-radius: 50%;
+        margin-right: 1rem;
+
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .btn-secondary {
+    color: $brand-primary;
   }
 }
 </style>

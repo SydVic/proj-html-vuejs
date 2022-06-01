@@ -7,7 +7,7 @@
       <MainLogistics />
       <MainResults />
       <MainFeedback />
-      <MainContactUs />
+      <MainContactUs :companyObject="companyInfo" />
     </main>
     <AppFooter />
   </div>
@@ -43,6 +43,7 @@ export default {
         name: 'gen',
         phone: '+1 (305) 1234-5678',
         eMail: 'hello@example.com',
+        location: 'Main Avenue, 987',
         openingDay: 'Mon',
         closingDay: 'Sat',
         openingHour: '9:00',
