@@ -18,6 +18,8 @@ img {
 }
 
 /* COMMON */
+
+/* CONTAINERS */
 .container-general {
   width: 60%;
   margin: 0 auto;
@@ -31,6 +33,7 @@ img {
   width: 40%;
 }
 
+/* MARGINS */
 .ml-auto {
   margin-left: auto;
 }
@@ -39,34 +42,13 @@ img {
   margin: 0 auto;
 }
 
+/* TEXT */
 .txt-white {
   color: $white;
 }
 
 .txt-brand {
   color: $brand-primary;
-}
-
-.btn-primary {
-  color: $white;
-  background-color: $brand-primary;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: .8rem 1.5rem;
-  border-radius: 5px;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.btn-secondary {
-  color: $white;
-  border: 1px solid $brand-primary;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: .8rem 1.5rem;
-  border-radius: 5px;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .title-small {
@@ -91,4 +73,47 @@ img {
   margin: 2rem 0;
   line-height: 1.4rem;
   color: $silver-sand;
+}
+
+.company-name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+
+  .prename {
+    color: $brand-primary;
+    background-color: $brand-primary-shadow;
+    padding: .5rem .2rem .5rem 1.5rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .name {
+    color: $silver-sand;
+    padding-left: .2rem;
+  }
+}
+/* BUTTONS */
+.btn-primary {
+  color: $white;
+  background-color: $brand-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: .8rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  color: $white;
+  border: 1px solid $brand-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: .8rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
 }

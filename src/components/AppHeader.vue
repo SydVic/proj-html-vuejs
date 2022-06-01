@@ -191,25 +191,6 @@ export default {
     font-weight: 100;
     position: relative;
 
-    .company-name {
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 3px;
-  
-      .prename {
-        color: $brand-primary;
-        background-color: $brand-primary-shadow;
-        padding: .5rem .2rem .5rem 1.5rem;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-      }
-      .name {
-        color: $silver-sand;
-        padding-left: .2rem;
-      }
-    }
-
     .nav-items {
 
       ul {

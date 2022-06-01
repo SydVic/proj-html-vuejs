@@ -9,7 +9,7 @@
       <MainFeedback />
       <MainContactUs :companyObject="companyInfo" />
     </main>
-    <AppFooter />
+    <AppFooter :companyObject="companyInfo"  />
   </div>
 </template>
 
