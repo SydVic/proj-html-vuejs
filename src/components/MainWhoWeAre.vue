@@ -1,9 +1,13 @@
 <template>
   <!-- SECTION WHO WE ARE -->
   <section class="who-we-are">
+    <!-- CONTAINER WIDTH 60% -->
     <div class="container-general">
+      <!-- ROW -->
       <div class="row">
+        <!-- COL-8 -->
         <div class="col-lg-8">
+          <!-- TEXT SECTION -->
           <div class="text-section">
             <h3 class="title-small">who we are</h3>
             <h2 class="title">
@@ -25,10 +29,16 @@
               </ul>
             </div>
           </div>
+          <!-- /TEXT SECTION -->
         </div>
+        <!-- /COL-8 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
+          <!-- VEHICLES -->
           <div class="vehicle-types">
             <h2>Vehicle Types</h2>
+            <!-- VEHICLE -->
             <div class="vehicle-type">
               <div class="vehicle-img">
                 <img src="../assets/img/truck-1.png" alt="">
@@ -38,6 +48,9 @@
                 <p>Max Weight 1200kg</p>
               </div>
             </div>
+            <!-- /VEHICLE -->
+
+            <!-- VEHICLE -->
             <div class="vehicle-type">
               <div class="vehicle-img">
                 <img src="../assets/img/truck-1.png" alt="">
@@ -47,6 +60,9 @@
                 <p>Max Weight 6000kg</p>
               </div>
             </div>
+            <!-- /VEHICLE -->
+
+            <!-- VEHICLE -->
             <div class="vehicle-type">
               <div class="vehicle-img">
                 <img src="../assets/img/truck-1.png" alt="">
@@ -56,7 +72,11 @@
                 <p>Max Weight 24000kg</p>
               </div>
             </div>
+            <!-- /VEHICLE -->
           </div>
+          <!-- /VEHICLES -->
+
+          <!-- CERTIFICATIONS BADGES -->
           <div class="certifications">
             <h2>Certifications</h2>
             <div class="certifications-img">
@@ -66,9 +86,13 @@
               <img src="../assets/img/certificate.png" alt="">
             </div>
           </div>
+          <!-- /CERTIFICATIONS BADGES -->
         </div>
+        <!-- /COL-4 -->
       </div>
+      <!-- /ROW -->
     </div>
+    <!-- /CONTAINER WIDTH 60% -->
   </section>
   <!-- /SECTION WHO WE ARE -->
 </template>

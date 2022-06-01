@@ -2,16 +2,23 @@
   <section class="services">
     <!-- CONTAINER WIDTH 60% -->
     <div class="container-general">
-      <!-- SERVICES TITLE AND TEXT -->
+      <!-- ROW -->
       <div class="row">
+        <!-- COL-8 -->
         <div class="col-lg-8">
+          <!-- SERVICES TITLE AND TEXT -->
           <h3 class="title-small">road transport</h3>
           <h2 class="title">
             <span class="title-normal txt-white">Main</span>
             <span class="title-highlighted txt-white">Services</span>
           </h2>
-          <p class="paragraph">With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.</p>
+          <p class="paragraph">With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.
+          </p>
+          <!-- /SERVICES TITLE AND TEXT -->
         </div>
+        <!-- /COL-8 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <div class="wrapper-flex">
             <div class="btn">
@@ -19,11 +26,13 @@
             </div>
           </div>
         </div>
+        <!-- /COL-4 -->
       </div>
-      <!-- /SERVICES TITLE AND TEXT -->
+      <!-- /ROW -->
 
-      <!-- SERVICES CARDS -->
+      <!-- ROW -->
       <div class="row">
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="services-card">
@@ -40,6 +49,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="services-card mc-auto">
@@ -56,6 +68,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="services-card ml-auto">
@@ -72,8 +87,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
       </div>
-      <!-- /SERVICES CARDS -->
+      <!-- /ROW -->
     </div>
     <!-- /CONTAINER WIDTH 60% -->
   </section>

@@ -160,6 +160,10 @@ export default {
         li {
           margin-left: 2rem;
 
+          &:hover {
+            color: $white;
+          }
+
           a {
             color: inherit;
           }

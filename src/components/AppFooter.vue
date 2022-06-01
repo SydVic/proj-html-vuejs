@@ -1,15 +1,23 @@
 <template>
   <section class="footer">
+    <!-- FOOTER TOP -->
     <div class="footer-top">
+      <!-- CONTAINER WIDTH60% -->
       <div class="container-general">
+        <!-- ROW -->
         <div class="row">
+          <!-- COL-3 -->
           <div class="col-lg-3">
+            <!-- WRAPPER -->
             <div class="content-wrapper">
+              <!-- COMPANY LOGO -->
               <div class="company-name">
                 <span class="prename">{{companyObject.prename}}</span>
                 <span class="name">{{companyObject.name}}</span>
               </div>
+              <!-- /COMPANY LOGO -->
               <p class="paragraph">A functional HTML Template for Corporate & Business.</p>
+              <!-- COMPANY CONTACTS -->
               <ul class="company-contacts">
                 <li>
                   <span class="icon-wrapper">
@@ -36,11 +44,16 @@
                   </span>
                 </li>
               </ul>
+              <!-- /COMPANY CONTACTS -->
               <div class="btn">
                 <a href="" class="btn-secondary">get in touch</a>
               </div>
             </div>
+            <!-- /WRAPPER -->
           </div>
+          <!-- /COL-3 -->
+
+          <!-- COL-3 V-FOR -->
           <div v-for="(item, index) in footerItemsArray" :key="index" class="col-lg-3">
             <div class="content-wrapper">
               <div class="footer-card">
@@ -51,9 +64,15 @@
               </div>
             </div>
           </div>
+          <!-- /COL-3 V-FOR -->
         </div>
+        <!-- /ROW -->
       </div>
+      <!-- /CONTAINER WIDTH60% -->
     </div>
+    <!-- /FOOTER TOP -->
+
+    <!-- FOOTER BOTTOM -->
     <div class="footer-bottom">
       <div class="container-general">
         <p>Enjoy the low price. We are tracking any intention of piracy.</p>
@@ -65,6 +84,7 @@
         </a>
       </div>
     </div>
+    <!-- /FOOTER BOTTOM -->
   </section>
 </template>
 
@@ -161,6 +181,10 @@ export default {
     text-align: center;
     line-height: 45px;
     border-radius: 50%;
+
+    &:hover {
+      color: $white;
+    }
 
     a {
       color: inherit;

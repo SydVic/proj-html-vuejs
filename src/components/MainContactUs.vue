@@ -1,9 +1,14 @@
 <template>
   <section class="contact-us">
+    <!-- CONTAINER WIDTH60% -->
     <div class="container-general">
+      <!-- ROW -->
       <div class="row">
+        <!-- COL-7 -->
         <div class="col-lg-7">
+          <!-- FORM SECTION WRAPPER -->
           <div class="form-wrapper">
+            <!-- FORM TITLE AND TEXT -->
             <div class="form-text">
               <h3 class="title-small">send a message</h3>
               <h2 class="title">
@@ -11,23 +16,29 @@
                 <span class="title-highlighted txt-brand">Touch</span>
               </h2>
               <p class="paragraph">We will respond to your message as soon as possible.</p>
-              <!-- FORM -->
-              <form class="contact-us" action="">
-                <input type="text" class="input-name" placeholder="Name">
-                <input type="email" class="" placeholder="Email">
-                <input type="text" class="" placeholder="Phone">
-                <select class="options-select" name="" id="">
-                  <option value="">More Info</option>
-                </select>
-                <textarea class="leave-message" placeholder="Message"></textarea>
-              </form>
-              <!-- /FORM -->
-              <div class="btn">
-                <div class="btn-primary">send</div>
-              </div>
+            </div>
+            <!-- /FORM TITLE AND TEXT -->
+
+            <!-- FORM -->
+            <form class="contact-us" action="">
+              <input type="text" class="input-name" placeholder="Name">
+              <input type="email" class="" placeholder="Email">
+              <input type="text" class="" placeholder="Phone">
+              <select class="options-select" name="" id="">
+                <option value="">More Info</option>
+              </select>
+              <textarea class="leave-message" placeholder="Message"></textarea>
+            </form>
+            <!-- /FORM -->
+            <div class="btn">
+              <div class="btn-primary">send</div>
             </div>
           </div>
+          <!-- /FORM SECTION WRAPPER -->
         </div>
+        <!-- /COL-7 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4 col-lg-offset-1">
           <div class="contacts-wrapper">
             <h2>Example Inc.</h2>
@@ -64,8 +75,11 @@
             </div>
           </div>
         </div>
+        <!-- /COL-4 -->
       </div>
+      <!-- /ROW -->
     </div>
+    <!-- /CONTAINER WIDTH60% -->
   </section>
 </template>
 

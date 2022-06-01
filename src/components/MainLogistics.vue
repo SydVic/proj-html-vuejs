@@ -1,5 +1,6 @@
 <template>
   <section class="logistical">
+    <!-- TITLE AND TEXT CONTAINER -->
     <div class="container-small mc-auto">
       <h3 class="title-small">how it works in practice</h3>
       <h2 class="title">
@@ -8,10 +9,16 @@
       </h2>
       <p class="paragraph">We work with innovative methodoligies to ensure that the entire delivery process is done from start to finish as planned.</p>
     </div>
+    <!-- /TITLE AND TEXT CONTAINER -->
+
+    <!-- LOGISTICAL STEPS -->
     <div class="logistical-steps">
       <div class="line"></div>
+      <!-- CONTAINER 80% -->
       <div class="container-large mc-auto">
+        <!-- ROW -->
         <div class="row">
+          <!-- COL STEP -->
           <div class="col">
             <div class="step-wrapper">
               <div class="rounded-number">01</div>
@@ -19,6 +26,9 @@
               <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
+          <!-- /COL STEP -->
+
+          <!-- COL STEP -->
           <div class="col">
             <div class="step-wrapper">
               <div class="rounded-number">02</div>
@@ -26,6 +36,9 @@
               <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
+          <!-- /COL STEP -->
+
+          <!-- COL STEP -->
           <div class="col">
             <div class="step-wrapper">
               <div class="rounded-number">03</div>
@@ -33,6 +46,9 @@
               <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
+          <!-- /COL STEP -->
+
+          <!-- COL STEP -->
           <div class="col">
             <div class="step-wrapper">
               <div class="rounded-number">04</div>
@@ -40,6 +56,9 @@
               <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
+          <!-- /COL STEP -->
+
+          <!-- COL STEP -->
           <div class="col">
             <div class="step-wrapper">
               <div class="rounded-number">05</div>
@@ -47,9 +66,13 @@
               <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
+          <!-- /COL STEP -->
         </div>
+        <!-- /ROW -->
       </div>
+      <!-- /CONTAINER 80% -->
     </div>
+    <!-- /LOGISTICAL STEPS -->
   </section>
 </template>
 

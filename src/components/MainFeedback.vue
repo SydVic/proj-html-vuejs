@@ -13,8 +13,9 @@
 
     <!-- CONTAINER WIDTH 60% -->
     <div class="container-general">
-      <!-- FEEDBACK CARDS -->
+      <!-- ROW -->
       <div class="row">
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="feedback-card">
@@ -29,6 +30,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="feedback-card mc-auto">
@@ -43,6 +47,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
+
+        <!-- COL-4 -->
         <div class="col-lg-4">
           <!-- CARD -->
           <div class="feedback-card ml-auto">
@@ -57,8 +64,9 @@
           </div>
           <!-- /CARD -->
         </div>
+        <!-- /COL-4 -->
       </div>
-      <!-- /FEEDBACK CARDS -->
+      <!-- /ROW -->
     </div>
     <!-- /CONTAINER WIDTH 60% -->
   </section>
