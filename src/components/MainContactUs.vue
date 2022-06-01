@@ -134,13 +134,13 @@ section.contact-us {
   }
 
   ul.company-contacts {
+    color: $brand-primary;
 
     li {
       margin-bottom: 1.5rem;
 
       span {
         display: inline-block;
-        color: $brand-primary;
         font-size: 1.2rem;
       }
 

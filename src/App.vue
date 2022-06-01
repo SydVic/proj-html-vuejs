@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader :companyObject="companyInfo" :navItemsArray="navItems"/>
+    <AppHeader :companyObject="companyInfo" :navItemsArray="headerNavItems"/>
     <main class="main">
       <MainWhoWeAre />
       <MainServices />
@@ -9,7 +9,7 @@
       <MainFeedback />
       <MainContactUs :companyObject="companyInfo" />
     </main>
-    <AppFooter :companyObject="companyInfo"  />
+    <AppFooter :companyObject="companyInfo" :footerItemsArray="footerNavItems" />
   </div>
 </template>
 
@@ -63,12 +63,47 @@ export default {
           },
         ]
       },
-      navItems: [
+      headerNavItems: [
         'home',
         'about',
         'services',
         'process',
         'testimonials',
+      ],
+      footerNavItems: [
+        {
+          title: 'About',
+          items: [
+            'The Company',
+            'Insitutional',
+            'Social & Events',
+            'Innovation',
+            'Environment',
+            'Technology',
+          ]
+        },
+        {
+          title: 'Transport',
+          items: [
+            'Industrialized',
+            'Chemicals',
+            'Packaged Liquids',
+            'Construction',
+            'Laminated Wood',
+            'And others',
+          ]
+        },
+        {
+          title: 'Support',
+          items: [
+            'Responsibility',
+            'Terms of Use',
+            'About Cookies',
+            'Privacy Policy',
+            'Accessibility',
+            'Information',
+          ]
+        }
       ]
     }
   }

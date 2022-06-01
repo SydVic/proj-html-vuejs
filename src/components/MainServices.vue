@@ -109,7 +109,7 @@ section.services {
   
   .services-card {
     width: 95%;
-    background-color: #19191f;
+    background-color: $card-bg;
     padding: 2.5rem 2rem;
     border-radius: 10px;
     margin-top: 3rem;
