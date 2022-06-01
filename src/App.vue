@@ -1,14 +1,26 @@
 <template>
   <div id="app">
     <AppHeader :companyObject="companyInfo" :navItemsArray="navItems"/>
-    <AppMain />
+    <main class="main">
+      <MainWhoWeAre />
+      <MainServices />
+      <MainLogistics />
+      <MainResults />
+      <MainFeedback />
+      <MainContactUs />
+    </main>
     <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppMain from "./components/AppMain.vue";
+import MainWhoWeAre from "./components/MainWhoWeAre.vue";
+import MainServices from "./components/MainServices.vue";
+import MainLogistics from "./components/MainLogistics.vue";
+import MainResults from "./components/MainResults.vue";
+import MainFeedback from "./components/MainFeedback.vue";
+import MainContactUs from "./components/MainContactUs.vue";
 import AppFooter from "./components/AppFooter.vue";
 import "@fontsource/aileron";
 
@@ -16,7 +28,12 @@ export default {
   name: 'App',
   components: {
     AppHeader,
-    AppMain,
+    MainWhoWeAre,
+    MainServices,
+    MainLogistics,
+    MainResults,
+    MainFeedback,
+    MainContactUs,
     AppFooter,
   },
   data: function() {
@@ -61,6 +78,4 @@ export default {
 @import "./style/framework-12cols.scss";
 @import "./style/common.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
-
 </style>
